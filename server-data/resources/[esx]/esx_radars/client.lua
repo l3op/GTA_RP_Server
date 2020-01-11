@@ -36,7 +36,8 @@ Citizen.CreateThread(function()
         for k,v in pairs(radares) do
             local player = GetPlayerPed(-1)
             local coords = GetEntityCoords(player, true)
-            if Vdist2(radares[k].x, radares[k].y, radares[k].z, coords["x"], coords["y"], coords["z"]) < 20 then
+            --if Vdist2(radares[k].x, radares[k].y, radares[k].z, coords["x"], coords["y"], coords["z"]) < 20 then
+            if distance2D(radares[k].x, radares[k].z, coords["x"], coords["z"]) <20 and math.abs(radares[k].y - coords["z"])<5 then
                 if PlayerData.job ~= nil and not (PlayerData.job.name == 'police' or PlayerData.job.name == 'ambulance') then
                     checkSpeed()
                 end
@@ -86,3 +87,7 @@ function checkSpeed()
     end
 end
 
+
+function distance2D(float x1,float x2, float y1, float y2)
+    return math.sqrt( (x1-y1)*(x1-y1)+(x2-y2)*(x2-y2) )
+end
