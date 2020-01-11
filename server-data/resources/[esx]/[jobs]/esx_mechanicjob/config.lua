@@ -1,5 +1,5 @@
 Config                            = {}
-Config.Locale                     = 'fr'
+Config.Locale                     = 'en'
 
 Config.DrawDistance               = 100.0
 Config.MaxInService               = -1
