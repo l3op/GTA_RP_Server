@@ -1,37 +1,31 @@
 # esx_drugs
 
-Adds the well-known drugs for the people who want to make quick money. Weed Field require you to run around and harvest weed plants, process and then sell at the beach of San Andreas!
-
 ## Download & Installation
-
-### Using [fvm](https://github.com/qlaffont/fvm-installer)
-```
-fvm install --save --folder=esx esx-org/esx_drugs
-```
 
 ### Using Git
 ```
 cd resources
-git clone https://github.com/ESX-Org/esx_drugs [esx]/esx_drugs
+git clone https://github.com/diorgesl/esx_drugs [esx]/esx_drugs
 ```
 
 ### Manually
-- Download https://github.com/ESX-Org/esx_drugs/archive/master.zip
+- Download https://github.com/diorgesl/esx_drugs/archive/master.zip
 - Put it in the `[esx]` directory
 
 ## Installation
-- Import `esx_drugs.sql` in your database
 - Add this in your `server.cfg`:
 
 ```
 start esx_drugs
 ```
 
+Just read the config.lua, well documented.
+
 # Legal
 ### License
-esx_drugs - drugs job
+esx_drugs - Automated script to farm/process/sell/use Drugs for ESX
 
-Copyright (C) 2015-2018 Jérémie N'gadi
+Copyright (C) 2019 by Diorges Rocha
 
 This program Is free software: you can redistribute it And/Or modify it under the terms Of the GNU General Public License As published by the Free Software Foundation, either version 3 Of the License, Or (at your option) any later version.
 
