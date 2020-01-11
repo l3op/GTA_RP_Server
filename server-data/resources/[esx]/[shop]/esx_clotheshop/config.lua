@@ -1,5 +1,7 @@
 Config = {}
+
 Config.Locale = 'tc'
+
 
 Config.Price = 250
 
