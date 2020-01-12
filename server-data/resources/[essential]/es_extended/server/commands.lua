@@ -51,7 +51,6 @@ end, function(source, args, user)
 end, {help = 'Teleport to player', params = {
 	{name = 'playerId(go)', help = _U('id_param')}
 	{name = 'playerId(to)', help = _U('id_param')}
-}})
 
 TriggerEvent('es:addGroupCommand', 'setjob', 'jobmaster', function(source, args, user)
 	if tonumber(args[1]) and args[2] and tonumber(args[3]) then
