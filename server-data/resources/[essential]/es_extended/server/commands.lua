@@ -24,7 +24,7 @@ TriggerEvent('es:addGroupCommand', 'tpto', 'admin', function(source, args, user)
 	local xPlayer = ESX.GetPlayerFromId(args[1])
 	if xPlayer then
 		local coords = xPlayer.getCoords(true)
-		TriggerClientEvent('esx:teleport', source {
+		TriggerClientEvent('esx:teleport', source, {
 			x = coords.x,
 			y = coords.y,
 			z = coords.z
