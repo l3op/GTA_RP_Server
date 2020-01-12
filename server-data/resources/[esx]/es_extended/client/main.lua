@@ -9,8 +9,13 @@ AddEventHandler('esx:playerLoaded', function(xPlayer)
 
 	if Config.EnableHud then
 		for k,v in ipairs(xPlayer.accounts) do
-			local accountTpl = '<div><img src="img/accounts/' .. v.name .. '.png"/>&nbsp;{{money}}</div>'
-
+			--just show the bank
+			if k==2 then
+				break
+			end
+			
+			--local accountTpl = '<div><img src="img/accounts/' .. v.name .. '.png"/>&nbsp;{{money}}</div>'
+			local accountTpl = '<div>銀行存款{{money}}</div>'
 			ESX.UI.HUD.RegisterElement('account_' .. v.name, k - 1, 0, accountTpl, {
 				money = 0
 			})
