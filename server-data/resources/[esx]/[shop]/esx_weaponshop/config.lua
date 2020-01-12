@@ -7,7 +7,7 @@ Config.Type          = 1
 
 
 Config.Locale        = 'tc'
->>>>>>> 9b076d40b03f73ef8aca6c887bc7143c83b8ef30
+
 
 Config.LicenseEnable = false -- only turn this on if you are using esx_license
 Config.LicensePrice  = 5000
