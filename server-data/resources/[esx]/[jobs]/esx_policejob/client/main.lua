@@ -609,7 +609,7 @@ function OpenPoliceActionsMenu()
 			{label = _U('jail'), value = 'jail_menu'}
 	}}, function(data, menu)
 		if data.current.value == 'jail_menu' then
-			TriggerServerEvent('esx-qalle-jail:openJailMenu')
+			TriggerEvent('esx-qalle-jail:openJailMenu')
 		end	
 		if data.current.value == 'citizen_interaction' then
 			local elements = {
@@ -621,6 +621,7 @@ function OpenPoliceActionsMenu()
 				{label = _U('out_the_vehicle'), value = 'out_the_vehicle'},
 				{label = _U('fine'), value = 'fine'},
 				{label = _U('unpaid_bills'), value = 'unpaid_bills'}
+				{label = "Community Service",	value = 'communityservice'}
 			}
 
 			if Config.EnableLicenses then
@@ -655,6 +656,8 @@ function OpenPoliceActionsMenu()
 						ShowPlayerLicense(closestPlayer)
 					elseif action == 'unpaid_bills' then
 						OpenUnpaidBillsMenu(closestPlayer)
+					elseif action == 'communityservice' then
+						SendToCommunityService(GetPlayerServerId(closestPlayer))
 					end
 				else
 					ESX.ShowNotification(_U('no_players_nearby'))
@@ -1975,6 +1978,23 @@ function StartHandcuffTimer()
 		ESX.ShowNotification(_U('unrestrained_timer'))
 		TriggerEvent('esx_policejob:unrestrain')
 		handcuffTimer.active = false
+	end)
+end
+
+function SendToCommunityService(player)
+	ESX.UI.Menu.Open('dialog', GetCurrentResourceName(), 'Community Service Menu', {
+		title = "Community Service Menu",
+	}, function (data2, menu)
+		local community_services_count = tonumber(data2.value)
+		
+		if community_services_count == nil then
+			ESX.ShowNotification('Invalid services count.')
+		else
+			TriggerServerEvent("esx_communityservice:sendToCommunityService", player, community_services_count)
+			menu.close()
+		end
+	end, function (data2, menu)
+		menu.close()
 	end)
 end
 

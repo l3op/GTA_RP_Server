@@ -65,6 +65,7 @@ Locales['tc'] = {
   ['citizen_interaction'] = '市民互動',
   ['vehicle_interaction'] = '車輛互動',
   ['object_spawner'] = '物件生成點',
+  ['jail'] = '監獄',
 
   ['id_card'] = '身分證',
   ['search'] = '搜尋',

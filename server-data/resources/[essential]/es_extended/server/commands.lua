@@ -20,11 +20,32 @@ end, {help = 'Teleport to coordinates', params = {
 	{name = 'z', help = 'Z coords'}
 }})
 
+TriggerEvent('es:addGroupCommand', 'tptome', 'admin', function(source, args, user)
+	print(PlayerPedId())
+	--[[
+	local xPlayer = ESX.GetPlayerFromId(args[1])
+	if xPlayer then
+		local coords = xPlayer.getCoords(true)
+		TriggerClientEvent('esx:teleport', source, {
+			x = coords.x,
+			y = coords.y,
+			z = coords.z
+		})
+	else
+		TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Player not online.' } })
+	end
+	]]--
+end, function(source, args, user)
+	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
+end, {help = 'Teleport to player', params = {
+	{name = 'playerId', help = _U('id_param')},
+}})
+
 TriggerEvent('es:addGroupCommand', 'tpto', 'admin', function(source, args, user)
 	local xPlayer = ESX.GetPlayerFromId(args[1])
 	if xPlayer then
 		local coords = xPlayer.getCoords(true)
-		TriggerClientEvent('esx:teleport', source {
+		TriggerClientEvent('esx:teleport', source, {
 			x = coords.x,
 			y = coords.y,
 			z = coords.z
