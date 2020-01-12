@@ -30,6 +30,7 @@ client_scripts {
 	'locales/es.lua',
 	'locales/sv.lua',
 	'locales/pl.lua',
+	'locales/tc.lua',
 	'config.lua',
 	'client/main.lua'
 }
