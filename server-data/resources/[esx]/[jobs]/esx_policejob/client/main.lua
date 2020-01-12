@@ -609,7 +609,7 @@ function OpenPoliceActionsMenu()
 			{label = _U('jail'), value = 'jail_menu'}
 	}}, function(data, menu)
 		if data.current.value == 'jail_menu' then
-			TriggerServerEvent('esx-qalle-jail:openJailMenu')
+			TriggerEvent('esx-qalle-jail:openJailMenu')
 		end	
 		if data.current.value == 'citizen_interaction' then
 			local elements = {
