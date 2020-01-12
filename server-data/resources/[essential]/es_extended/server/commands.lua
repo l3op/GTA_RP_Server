@@ -2,7 +2,7 @@ TriggerEvent('es:addGroupCommand', 'tp', 'admin', function(source, args, user)
 	local x = tonumber(args[1])
 	local y = tonumber(args[2])
 	local z = tonumber(args[3])
-	print("test")
+
 	if x and y and z then
 		TriggerClientEvent('esx:teleport', source, {
 			x = x,
@@ -18,6 +18,14 @@ end, {help = 'Teleport to coordinates', params = {
 	{name = 'x', help = 'X coords'},
 	{name = 'y', help = 'Y coords'},
 	{name = 'z', help = 'Z coords'}
+}})
+
+TriggerEvent('es:addGroupCommand', 'test', 'admin', function(source, args, user)
+	print(args[1])
+end, function(source, args, user)
+	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
+end, {help = 'Teleport to player', params = {
+	{name = 'playerId', help = _U('id_param')}
 }})
 
 TriggerEvent('es:addGroupCommand', 'setjob', 'jobmaster', function(source, args, user)
