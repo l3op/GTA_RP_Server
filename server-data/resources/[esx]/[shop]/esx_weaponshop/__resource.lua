@@ -10,13 +10,13 @@ server_scripts {
 	'locales/de.lua',
 	'locales/br.lua',
 	'locales/en.lua',
-	'locales/tc.lua',
 	'locales/fi.lua',
 	'locales/fr.lua',
 	'locales/es.lua',
 	'locales/pl.lua',
 	'locales/sv.lua',
 	'locales/cs.lua',
+	'locales/tc.lua',
 	'config.lua',
 	'server/main.lua'
 }
