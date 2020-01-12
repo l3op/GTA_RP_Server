@@ -1,5 +1,5 @@
 Locales ['tc'] = {
-  ['voice']   = '~y~voice: ~s~%s',
+  ['voice']   = '~y~聲音: ~s~%s',
   ['normal']  = 'normal',
   ['shout']   = 'loud',
   ['whisper'] = 'small',
