@@ -22,7 +22,12 @@ end, {help = 'Teleport to coordinates', params = {
 
 TriggerEvent('es:addGroupCommand', 'test', 'admin', function(source, args, user)
 	local xPlayer = ESX.GetPlayerFromId(args[1])
-	print(xPlayer.getCoords())
+	if xPlayer then
+		local coords = xPlayer.getCoords(true)
+		print(coords)
+	else
+		TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Player not online.' } })
+	end
 end, function(source, args, user)
 	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
 end, {help = 'Teleport to player', params = {
