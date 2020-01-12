@@ -21,7 +21,8 @@ end, {help = 'Teleport to coordinates', params = {
 }})
 
 TriggerEvent('es:addGroupCommand', 'test', 'admin', function(source, args, user)
-	print(args[1])
+	local xPlayer = ESX.GetPlayerFromId(args[1])
+	print(xPlayer.getCoords())
 end, function(source, args, user)
 	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
 end, {help = 'Teleport to player', params = {
