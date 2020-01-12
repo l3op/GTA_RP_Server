@@ -88,6 +88,6 @@ function checkSpeed()
 end
 
 
-function distance2D(float x1,float x2, float y1, float y2)
+function distance2D(x1,x2,y1,y2)
     return math.sqrt( (x1-y1)*(x1-y1)+(x2-y2)*(x2-y2) )
 end
