@@ -15,7 +15,7 @@ AddEventHandler('esx:playerLoaded', function(xPlayer)
 			end
 			
 			--local accountTpl = '<div><img src="img/accounts/' .. v.name .. '.png"/>&nbsp;{{money}}</div>'
-			local accountTpl = '<div>銀行存款{{money}}</div>'
+			local accountTpl = '<div style="transform:translate(5vh,0);">銀行存款{{money}}</div>'
 			ESX.UI.HUD.RegisterElement('account_' .. v.name, k - 1, 0, accountTpl, {
 				money = 0
 			})
@@ -470,7 +470,8 @@ Citizen.CreateThread(function()
 	end
 end)
 
--- Disable wanted level
+--Disable wanted level
+
 if Config.DisableWantedLevel then
 	Citizen.CreateThread(function()
 		while true do
