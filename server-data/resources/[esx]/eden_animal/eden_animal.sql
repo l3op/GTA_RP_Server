@@ -4,7 +4,7 @@ INSERT INTO `shops` (`store`, `item`, `price`) VALUES
 	('LTDgasoline', 'croquettes', 100)
 ;
 
-INSERT INTO `items` (`name`, `label`, `limit`) VALUES
+INSERT INTO `items` (`name`, `label`, `weight`) VALUES
 	('croquettes', 'Croquettes', 20)
 ;
 
