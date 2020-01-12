@@ -1,5 +1,5 @@
 Config					= {}
-Config.Locale			= 'fr'
+Config.Locale			= 'en'
 Config.MarkerSize   	= {x = 3.0, y = 3.0, z = 3.0}
 Config.openHours		= 18
 Config.closeHours		= 24

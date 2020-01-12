@@ -1,6 +1,6 @@
 Config = {}
 
-Config.Locale = 'fr'
+Config.Locale = 'tc'
 
 Config.OpeningHour = 19
 Config.ClosingHour = 23

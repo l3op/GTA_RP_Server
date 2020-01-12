@@ -7,7 +7,7 @@ Config.KeyStopAction 	= 'C'
 -- Show blip in map?
 Config.ShowBlips    	= false
 
-Config.Locale 			= 'br'
+Config.Locale 			= 'tc'
 
 -- Before add any drug/item here you have to add the translation of the item
 Config.Drugs = {

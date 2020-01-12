@@ -1,7 +1,7 @@
 Locales['tc'] = {
   ['have_withdrawn'] = '你提款了 ~y~x%s~s~ ~b~%s~s~',
   ['have_deposited'] = '你存款了 ~y~x%s~s~ ~b~%s~s~',
-  ['free_prop'] = '要賣的房產',
+  ['free_prop'] = '可買的房產',
   ['property'] = '房產',
   ['enter'] = '進入',
   ['leave'] = '賣',
