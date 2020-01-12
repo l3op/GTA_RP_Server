@@ -2,7 +2,7 @@ TriggerEvent('es:addGroupCommand', 'tp', 'admin', function(source, args, user)
 	local x = tonumber(args[1])
 	local y = tonumber(args[2])
 	local z = tonumber(args[3])
-
+	print("test")
 	if x and y and z then
 		TriggerClientEvent('esx:teleport', source, {
 			x = x,
