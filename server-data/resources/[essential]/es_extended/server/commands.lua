@@ -25,6 +25,8 @@ TriggerEvent('es:addGroupCommand', 'test', 'admin', function(source, args, user)
 	if xPlayer then
 		local coords = xPlayer.getCoords(true)
 		print(coords)
+		print(coords.x)
+
 	else
 		TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Player not online.' } })
 	end
