@@ -20,11 +20,15 @@ end, {help = 'Teleport to coordinates', params = {
 	{name = 'z', help = 'Z coords'}
 }})
 
-TriggerEvent('es:addGroupCommand', 'test', 'admin', function(source, args, user)
+TriggerEvent('es:addGroupCommand', 'tpto', 'admin', function(source, args, user)
 	local xPlayer = ESX.GetPlayerFromId(args[1])
 	if xPlayer then
 		local coords = xPlayer.getCoords(true)
-		print(coords)
+		TriggerClientEvent('esx:teleport', source, {
+			x = coords.x,
+			y = coords.y,
+			z = coords.z
+		})
 	else
 		TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Player not online.' } })
 	end
