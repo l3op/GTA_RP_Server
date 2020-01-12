@@ -1,4 +1,4 @@
-Locales['en'] = {
+Locales['tc'] = {
 	['weed'] = '大麻',
 	['meth'] = '安非他命',
 	['opium'] = '鴉片',
