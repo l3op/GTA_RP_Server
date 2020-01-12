@@ -18,6 +18,6 @@ files {
     'imgs/bg5.png', 
     'imgs/bg6.png', 
     'imgs/bg7.png',
-    'imgs/logo.png'
-	'music/Loading.ogg'
+    'imgs/logo.png',
+	'music/Loading.ogg',
 }
