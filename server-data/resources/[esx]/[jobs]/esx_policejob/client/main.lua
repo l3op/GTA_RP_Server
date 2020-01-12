@@ -606,10 +606,10 @@ function OpenPoliceActionsMenu()
 			{label = _U('citizen_interaction'), value = 'citizen_interaction'},
 			{label = _U('vehicle_interaction'), value = 'vehicle_interaction'},
 			{label = _U('object_spawner'), value = 'object_spawner'},
-			{label = _U('監獄選項'), value = 'jail_menu'}
+			{label = _U('jail'), value = 'jail_menu'}
 	}}, function(data, menu)
 		if data.current.value == 'jail_menu' then
-			TriggerServerEvent('esx-qalle-jail:openjailMenu')
+			TriggerServerEvent('esx-qalle-jail:openJailMenu')
 		end	
 		if data.current.value == 'citizen_interaction' then
 			local elements = {
