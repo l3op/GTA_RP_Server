@@ -1,7 +1,7 @@
 local voice = {default = 5.0, shout = 12.0, whisper = 1.0, current = 0, level = nil}
 
 function drawLevel(r, g, b, a)
-	SetTextFont(4)
+	SetTextFont(1)
 	SetTextScale(0.5, 0.5)
 	SetTextColour(r, g, b, a)
 	SetTextDropshadow(0, 0, 0, 0, 255)

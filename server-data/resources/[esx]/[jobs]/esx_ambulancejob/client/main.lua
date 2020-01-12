@@ -141,7 +141,7 @@ function StartDistressSignal()
 			Citizen.Wait(2)
 			timer = timer - 30
 
-			SetTextFont(4)
+			SetTextFont(1)
 			SetTextScale(0.45, 0.45)
 			SetTextColour(185, 185, 185, 255)
 			SetTextDropshadow(0, 0, 0, 0, 255)
@@ -180,7 +180,7 @@ function SendDistressSignal()
 end
 
 function DrawGenericTextThisFrame()
-	SetTextFont(4)
+	SetTextFont(1)
 	SetTextScale(0.0, 0.5)
 	SetTextColour(255, 255, 255, 255)
 	SetTextDropshadow(0, 0, 0, 0, 255)
