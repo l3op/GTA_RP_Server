@@ -22,5 +22,5 @@ Locales['tc'] = {
 	['Weapon']							 = '<--- 武器 --->',
 	['confisq']							 = '沒收 x',
 	['inventory']						 = '<--- 背包 --->',
-	['invetor']							 = '背包'',
+	['invetor']							 = '背包',
 }
