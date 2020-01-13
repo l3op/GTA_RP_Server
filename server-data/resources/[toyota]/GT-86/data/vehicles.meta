@@ -85,7 +85,7 @@
       <type>VEHICLE_TYPE_CAR</type>
       <dashboardType>VDT_FUTO</dashboardType>
       <plateType>VPT_FRONT_AND_BACK_PLATES</plateType>
-      <vehicleClass>VC_SPORT</vehicleClass>
+      <vehicleClass>VC_INDUSTRIAL</vehicleClass>
       <wheelType>VWT_TUNER</wheelType>
       <trailers />
       <additionalTrailers />

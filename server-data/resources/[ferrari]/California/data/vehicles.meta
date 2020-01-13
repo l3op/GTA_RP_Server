@@ -91,7 +91,7 @@
       <type>VEHICLE_TYPE_CAR</type>
       <plateType>VPT_FRONT_AND_BACK_PLATES</plateType>
 	  <dashboardType>VDT_RACE</dashboardType>
-      <vehicleClass>VC_SPORT</vehicleClass>
+      <vehicleClass>VC_INDUSTRIAL</vehicleClass>
       <wheelType>VWT_HIEND</wheelType>
       <trailers />
       <additionalTrailers />
