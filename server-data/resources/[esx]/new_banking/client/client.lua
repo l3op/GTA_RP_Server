@@ -136,7 +136,7 @@ if bankMenu then
 	while true do
 		Wait(0)
 	if nearBank() or nearATM() then
-			DisplayHelpText("Appuie sur ~INPUT_PICKUP~ pour accèder à tes comptes ~b~")
+			DisplayHelpText("請按下 ~INPUT_PICKUP~ 來開啟選單 ~b~")
 	
 		if IsControlJustPressed(1, 38) then
 			inMenu = true
