@@ -2,122 +2,8 @@
 
 <CVehicleModelInfoVariation>
   <variationData>
-	<Item>
-      <modelName>raptor2017</modelName>
-      <colors>
-        <Item>
-          <indices content="char_array">
-            12 
-            88
-            5 
-            88
-            29 
-            134
-          </indices>
-          <liveries>
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-          </liveries>
-        </Item>     
-      </colors>
-      <kits>
-        <Item>936_raptor2017_modkit</Item>
-      </kits>
-      <windowsWithExposedEdges />
-      <plateProbabilities>
-        <Probabilities>
-          <Item>
-            <Name>Standard White</Name>
-            <Value value="100" />
-          </Item>
-        </Probabilities>
-      </plateProbabilities>
-      <lightSettings value="0" />
-      <sirenSettings value="0" />
-    </Item>
-
-    <Item>
-      <modelName>aventador</modelName>
-      <colors>
-        <Item>
-          <indices content="char_array">
-            12 
-            88
-            5 
-            88
-            29 
-            134
-          </indices>
-          <liveries>
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-          </liveries>
-        </Item>     
-      </colors>
-      <kits>
-        <Item>937_aventador_modkit</Item>
-      </kits>
-      <windowsWithExposedEdges />
-      <plateProbabilities>
-        <Probabilities>
-          <Item>
-            <Name>Standard White</Name>
-            <Value value="100" />
-          </Item>
-        </Probabilities>
-      </plateProbabilities>
-      <lightSettings value="0" />
-      <sirenSettings value="0" />
-    </Item>
-
-    <Item>
-      <modelName>laferrari</modelName>
+     <Item>
+      <modelName>aperta</modelName>
       <colors>
         <Item>
           <indices content="char_array">
@@ -409,7 +295,7 @@
         </Item>
       </colors>
       <kits>
-        <Item>938_laferrari_modkit</Item>
+        <Item>8888_aperta_modkit</Item>
       </kits>
       <windowsWithExposedEdges />
       <plateProbabilities>
@@ -420,7 +306,7 @@
           </Item>
         </Probabilities>
       </plateProbabilities>
-      <lightSettings value="1668" />
+      <lightSettings value="77" />
       <sirenSettings value="0" />
     </Item>
   </variationData>
