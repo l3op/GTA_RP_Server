@@ -1,3 +1,3 @@
-INSERT INTO `items` (name, label, `limit`) VALUES
+INSERT INTO `items` (name, label, `weight`) VALUES
 	('jewels', 'Jewels', -1)
 ;
