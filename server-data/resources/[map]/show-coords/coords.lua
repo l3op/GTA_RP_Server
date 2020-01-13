@@ -14,7 +14,6 @@ end
 Citizen.CreateThread(function()
     while true do
     	Citizen.Wait(0)
-	if IsActive then
 		x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), true))
 
 		roundx = tonumber(string.format("%.2f", x))
