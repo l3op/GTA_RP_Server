@@ -233,6 +233,8 @@ AddEventHandler('esx:teleport', function(pos)
 	pos.y = pos.y + 0.0
 	pos.z = pos.z + 0.0
 
+	print(PlayerPedId())
+
 	RequestCollisionAtCoord(pos.x, pos.y, pos.z)
 
 	while not HasCollisionLoadedAroundEntity(PlayerPedId()) do
