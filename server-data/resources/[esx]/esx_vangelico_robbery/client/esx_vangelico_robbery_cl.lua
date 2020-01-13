@@ -41,7 +41,7 @@ function DrawText3D(x, y, z, text, scale)
 	local pX, pY, pZ = table.unpack(GetGameplayCamCoords())
 
 	SetTextScale(scale, scale)
-	SetTextFont(4)
+	SetTextFont(1)
 	SetTextProportional(1)
 	SetTextEntry("STRING")
 	SetTextCentre(1)
@@ -129,7 +129,7 @@ incircle = false
 soundid = GetSoundId()
 
 function drawTxt(x, y, scale, text, red, green, blue, alpha)
-	SetTextFont(4)
+	SetTextFont(1)
 	SetTextProportional(1)
 	SetTextScale(0.64, 0.64)
 	SetTextColour(red, green, blue, alpha)
