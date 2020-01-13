@@ -291,7 +291,8 @@ AddEventHandler("lester:createBlip", function(type, x, y, z)
 	SetBlipAsShortRange(blip, true)
 	if(type == 77)then
 		BeginTextCommandSetBlipName("STRING")
-		AddTextComponentString("Lester")
+		--AddTextComponentString("Lester")
+		AddTextComponentString("珠寶商")
 		EndTextCommandSetBlipName(blip)
 	end
 end)
