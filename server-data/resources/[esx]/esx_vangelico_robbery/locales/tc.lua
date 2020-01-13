@@ -1,7 +1,7 @@
 Locales['tc'] = {
 
 	['robbery_cancelled'] = '搶劫已取消!',
-	['shop_robbery'] = '珠寶搶劫',
+	['shop_robbery'] = '珠寶店',
 	['press_to_rob'] = '鳴槍以示搶劫',
 	['seconds_remaining'] = '~w~ seconds remaining',
 	['robbery_cancelled_at'] = '~r~ 搶劫已取消，在: ~b~',
