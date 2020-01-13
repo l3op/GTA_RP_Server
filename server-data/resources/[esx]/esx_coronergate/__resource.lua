@@ -6,7 +6,7 @@ server_scripts {
 
 client_scripts {
 	'client/main.lua',
-}	'locale/fr.lua'
+}	--'locale/fr.lua'
 
 ui_page 'ui/index.html'
 files {

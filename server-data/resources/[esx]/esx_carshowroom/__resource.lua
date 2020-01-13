@@ -4,6 +4,7 @@ client_scripts {
   '@es_extended/locale.lua',
   'translation/sv.lua',
   'translation/en.lua',
+  'translation/tc.lua',
   'config.lua',
   'client/main.lua',
 }

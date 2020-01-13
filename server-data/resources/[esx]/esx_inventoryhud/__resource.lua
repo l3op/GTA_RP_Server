@@ -15,6 +15,7 @@ client_scripts {
   "locales/cs.lua",
   "locales/en.lua",
   "locales/fr.lua",
+  "locales/tc.lua",
   "config.lua"
 }
 
@@ -24,6 +25,7 @@ server_scripts {
   "locales/cs.lua",
   "locales/en.lua",
   "locales/fr.lua",
+  "locales/tc.lua",
   "config.lua"
 }
 
