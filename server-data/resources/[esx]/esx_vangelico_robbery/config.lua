@@ -10,7 +10,7 @@ Config.SecBetwNextRob = 3600 --1 hour
 Config.MaxJewelsSell = 20
 Config.PriceForOneJewel = 500
 Config.EnableMarker = true
-Config.NeedBag = true
+Config.NeedBag = false
 
 Config.Borsoni = {40, 41, 44, 45}
 
