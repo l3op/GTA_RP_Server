@@ -11,6 +11,12 @@ function DrawTxt(text, x, y)
 	DrawText(x, y)
 end
 
+local IsActive = false
+
+RegisterCommand("showcoords", function(source, args, raw)
+    	IsActive = not IsActive
+end)
+
 Citizen.CreateThread(function()
     while true do
     	Citizen.Wait(0)
