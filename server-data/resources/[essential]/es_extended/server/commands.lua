@@ -38,27 +38,6 @@ end, {help = 'Teleport to player', params = {
 	{name = 'playerId', help = _U('id_param')}
 }})
 
-TriggerEvent('es:addGroupCommand', 'givebankmoney', 'admin', function(source, args, user)
-	local xPlayer = ESX.GetPlayerFromId(args[1])
-
-	if xPlayer then
-		local amount = tonumber(args[2])
-
-		if amount then
-			xPlayer.addMoney(amount)
-		else
-			TriggerClientEvent('esx:showNotification', source, _U('amount_invalid'))
-		end
-	else
-		TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Player not online.' } })
-	end
-end, function(source, args, user)
-	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
-end, {help = _U('givebankmoney'), params = {
-	{name = 'playerId', help = _U('id_param')},
-	{name = 'amount', help = _U('money_amount')}
-}})
-
 TriggerEvent('es:addGroupCommand', 'setjob', 'jobmaster', function(source, args, user)
 	if tonumber(args[1]) and args[2] and tonumber(args[3]) then
 		local xPlayer = ESX.GetPlayerFromId(args[1])
