@@ -25,7 +25,7 @@ local clothingShops = {
     { name="Clones'R us", color=58, id=73, x=125.640, y=-763.056, z=45.752},
 }
 local firstspawn = 0
-local lang = 'en'
+local lang = 'tc'
 local txt = {
   ['en'] = {
         ['title'] = 'Binco Shop',
@@ -49,6 +49,28 @@ local txt = {
         ['message'] = "Press ~INPUT_CONTEXT~ to ~g~shop for clothes",
         ['close'] = "Close"
   },
+  ['tc'] = {
+    ['title'] = '服飾店',
+    ['gender'] = '更改性別',
+    ['head'] = '頭',
+    ['body'] = '身體',
+    ['pants'] = '褲子',
+    ['shoes'] = '鞋子',
+    ['vests'] = '背心',
+    ['bags'] = '背包',
+    ['close'] = '關閉',
+    ['hair'] = '頭髮',
+    ['face'] = '臉',
+    ['ears'] = '耳環',
+    ['glasses'] = '眼鏡',
+    ['masks'] = "面具",
+    ['hats'] = "帽子",
+    ['gloves'] = "手臂及手套",
+    ['shirts'] = "襯衫",
+    ['jackets'] = "夾克",
+    ['message'] = "按下 ~INPUT_CONTEXT~ 來 ~g~買衣服",
+    ['close'] = "關閉"
+},
 
     ['fr'] = {
         ['title'] = 'Nouveau look',
