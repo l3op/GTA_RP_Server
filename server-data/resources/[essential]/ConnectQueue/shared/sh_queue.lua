@@ -437,10 +437,6 @@ function Queue:OnJoin(cb, resource)
     table_insert(_Queue.JoinCbs, tmp)
 end
 
-exports("GetQueueExports", function()
-    return Queue
-end)
-
 local function playerConnect(name, setKickReason, deferrals)
     local src = source
     local ids = Queue:GetIds(src)
