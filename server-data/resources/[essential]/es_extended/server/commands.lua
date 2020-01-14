@@ -20,6 +20,15 @@ end, {help = 'Teleport to coordinates', params = {
 	{name = 'z', help = 'Z coords'}
 }})
 
+TriggerEvent('es:addGroupCommand', 'tpptop', 'admin', function(source, args, user)
+	print(PlayerPedId())
+end, function(source, args, user)
+	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
+end, {help = 'Teleport player to player', params = {
+	{name = 'playerId(go)', help = _U('id_param')},
+	{name = 'playerId(to)', help = _U('id_param')}
+}})
+
 TriggerEvent('es:addGroupCommand', 'tpto', 'admin', function(source, args, user)
 	local xPlayer = ESX.GetPlayerFromId(args[1])
 	if xPlayer then
