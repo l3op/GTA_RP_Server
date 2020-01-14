@@ -12,6 +12,7 @@ server_scripts {
 	'locales/fr.lua',
 	'locales/es.lua',
 	'locales/sv.lua',
+	'locales/tc.lua',
 	'config.lua',
 	'server/main.lua'
 }
@@ -23,6 +24,7 @@ client_scripts {
 	'locales/fr.lua',
 	'locales/es.lua',
 	'locales/sv.lua',
+	'locales/tc.lua',
 	'config.lua',
 	'client/tattooList.lua',
 	'client/main.lua'
