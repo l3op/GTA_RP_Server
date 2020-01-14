@@ -55,11 +55,11 @@ Citizen.CreateThread(function()
 			local distance
 
 			if doorID.doors then
-				--distance = #(playerCoords - doorID.doors[1].objCoords)
-				distance = Vdist2(playerCoords["x"],playerCoords["y"],playerCoords["z"],doorID.doors[1].objCoords["x"],doorID.doors[1].objCoords["y"],doorID.doors[1].objCoords["z"])
+				distance = #(playerCoords - doorID.doors[1].objCoords)
+				--distance = Vdist2(playerCoords["x"],playerCoords["y"],playerCoords["z"],doorID.doors[1].objCoords["x"],doorID.doors[1].objCoords["y"],doorID.doors[1].objCoords["z"])
 			else
-				--distance = #(playerCoords - doorID.objCoords)
-				distance = Vdist2(playerCoords["x"],playerCoords["y"],playerCoords["z"],doorID.doors[1].objCoords["x"],doorID.doors[1].objCoords["y"],doorID.doors[1].objCoords["z"])
+				distance = #(playerCoords - doorID.objCoords)
+				--distance = Vdist2(playerCoords["x"],playerCoords["y"],playerCoords["z"],doorID.doors[1].objCoords["x"],doorID.doors[1].objCoords["y"],doorID.doors[1].objCoords["z"])
 			end
 
 			local isAuthorized = IsAuthorized(doorID)
