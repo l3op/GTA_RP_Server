@@ -1,237 +1,180 @@
 Config              = {}
 Config.DrawDistance = 100.0
-Config.MaxDelivery	= 10
-Config.TruckPrice	= 1500
-Config.Locale       = 'fr'
-
-Config.Trucks = {
-	"mule3",
-	"phantom3"	
-}
-
-Config.Cloakroom = {
-	CloakRoom = {
-			Pos   = {x = 146.0555, y = -3219.3471, z = 4.5},
-			Size  = {x = 3.0, y = 3.0, z = 1.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1
-		},
-}
+Config.Truck = "hauler" -- ONLY 1 TRUCK
+Config.Trailer = "tanker" -- ONLY 1 TRAILER
+--Possible alternative trailer for a vehicle delivery job: "tr4"
 
 Config.Zones = {
+	--This is the job start point
 	VehicleSpawner = {
-			Pos   = {x = 152.3740, y = -3212.1042, z = 4.5},
-			Size  = {x = 3.0, y = 3.0, z = 1.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1
-		},
-
-	VehicleSpawnPoint = {
-			Pos   = {x = 145.7359, y = -3204.5605, z = 5.0},
-			Size  = {x = 3.0, y = 3.0, z = 1.0},
-			Type  = -1
-		},
+		Pos   = {x = 182.83, y = 2777.74, z = 44.66},
+		Size  = {x = 3.0, y = 3.0, z = 1.0},
+		Color = {r = 204, g = 204, b = 0},
+		Type  = 1,
+		Colour    = 5, --BLIP
+		Id        = 477, --BLIP
+		Title     = "Fuel Transporter", --BLIP
+	},
+	
+	--Here you can cancel the job
+	MissionAbort = {
+		Pos   = {x = 174.44, y = 2808.12, z = 44.65},
+		Size  = {x = 3.0, y = 3.0, z = 1.0},
+		Color = {r = 204, g = 204, b = 0},
+		Type  = 1,
+	},
 }
 
-Config.Livraison = {
--------------------------------------------Los Santos
-	-- Strawberry avenue et Davis avenue
-	Delivery1LS = {
-			Pos   = {x = 121.0655, y = -1488.4984, z = 28.0},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 150
-		},
-	-- a coté des flic
-	Delivery2LS = {
-			Pos   = {x = 451.4836, y = -899.0954, z = 27.5},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 200
-		},
-	-- vers la plage
-	Delivery3LS = {
-			Pos   = {x = -1129.4438, y = -1607.2420, z = 3.9},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 250
-		},
-	-- studio 1
-	Delivery4LS = {
-			Pos   = {x = -1064.7435, y = -553.4235, z = 32.5},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 300
-		},
-	-- popular street et el rancho boulevard
-	Delivery5LS = {
-			Pos   = {x = 809.5350, y = -2024.2238, z = 28.0},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 350
-		},
-	--Alta street et las lagunas boulevard
-	Delivery6LS = {
-			Pos   = {x = 63.2668, y = -227.9965, z = 50.0},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 150
-		},
-	--Rockford Drive Noth et boulevard del perro
-	Delivery7LS = {
-			Pos   = {x = -1338.6923, y = -402.4188, z = 34.9},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 200
-		},
-	--Rockford Drive Noth et boulevard del perro
-	Delivery8LS = {
-			Pos   = {x = 548.6097, y = -206.3496, z = 52.5},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 250
-		},
-	--New empire way (airport)
-	Delivery9LS = {
-			Pos   = {x = -1141.9106, y = -2699.9340, z = 13.0},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 300
-		},
-	--Rockford drive south
-	Delivery10LS = {
-			Pos   = {x = -640.0313, y = -1224.9519, z = 10.5},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 350
-		},
-------------------------------------------- Blaine County
-	-- panorama drive
-	Delivery1BC = {
-			Pos   = {x = 1999.5457, y = 3055.0686, z = 45.5},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 300
-		},
-	-- route 68
-	Delivery2BC = {
-			Pos   = {x = 555.4768, y = 2733.9533, z = 41.0},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 350
-		},
-	-- Algonquin boulevard et cholla springs avenue
-	Delivery3BC = {
-			Pos   = {x =1685.1549, y = 3752.0849, z = 33.0},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 400
-		},
-	-- Joshua road
-	Delivery4BC = {
-			Pos   = {x = 182.7030, y = 2793.9829, z = 44.5},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 450
-		},
-	-- East joshua road
-	Delivery5BC = {
-			Pos   = {x = 2710.6799, y = 4335.3168, z = 44.8},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 500
-		},
-	-- Seaview road
-	Delivery6BC = {
-			Pos   = {x = 1930.6518, y = 4637.5878, z = 39.3},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 300
-		},
-	-- Paleto boulevard
-	Delivery7BC = {
-			Pos   = {x = -448.2438, y = 5993.8686, z = 30.3},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 350
-		},
-	-- Paleto boulevard et Procopio drive
-	Delivery8BC = {
-			Pos   = {x = 107.9181, y = 6605.9750, z = 30.8},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 400
-		},
-	-- Marina drive et joshua road
-	Delivery9BC = {
-			Pos   = {x = 916.6915, y = 3568.7783, z = 32.7},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 450
-		},
-	-- Pyrite Avenue
-	Delivery10BC = {
-			Pos   = {x = -128.6733, y = 6344.5493, z = 31.0},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 500
-		},
+--The truck spawns here
+Config.VehicleSpawnPoint = {
+      Pos   = {x = 191.73, y = 2799.62, z = 45.87},
+      Size  = {x = 3.0, y = 3.0, z = 1.0},
+      Type  = -1,
+}
+
+--The trailer spawns here, make sure it doesn't collide with the trailer
+Config.TrailerSpawnPoint = {
+      Pos   = {x = 200.87, y = 2789.53, z = 45.66},
+      Size  = {x = 3.0, y = 3.0, z = 1.0},
+      Type  = -1,
+}
+--In case you changed the spawn locations and the two vehicles don't attach anymore, you might have to modify the 3rd parameter from the AttachVehicleToTrailer function in the main.lua file. Just use CTRL+F and find it, only 1 occurence.
+
+--You can use the gas stations already set up, or you can change them however you want (all the delivery locations are gas stations)
+--Please use the already existing delivery locations as a template if you want to create new ones
+--You can adjust the payment to match the economy on your server
+Config.Delivery = {
+	--###Blaine County###
+	--Cardealer2 (Route 68) 1.32KM
+	Delivery1 = {
+		Pos   = {x = 1214.22, y = 2659.63, z = 37.05},
+		Size  = {x = 3.0, y = 3.0, z = 1.0},
+		Color = {r = 204, g = 204, b = 0},
+		Type  = 1,
+		Payment  = 2000,
+	},
+	--Fort Zancudo (Route 68) 3.02KM
+	Delivery2 = {
+		Pos   = {x = -2531.8655, y = 2344.23, z = 32.27},
+		Size  = {x = 3.0, y = 3.0, z = 1.0},
+		Color = {r = 204, g = 204, b = 0},
+		Type  = 1,
+		Payment  = 4500,
+	},
+	--Close to Trevor 2.50KM
+	Delivery3 = {
+		Pos      = {x = 1991.3655, y = 3762.47, z = 31.18},
+		Size  = {x = 3.0, y = 3.0, z = 1.0},
+		Color = {r = 204, g = 204, b = 0},
+		Type  = 1,
+		Payment  = 3750,
+	},
+	--Senora Freeway (right side towards paleto) 5.91KM
+	Delivery4 = {
+		Pos      = {x = 1689.95, y = 6418.29, z = 31.73},
+		Size  = {x = 3.0, y = 3.0, z = 1.0},
+		Color = {r = 204, g = 204, b = 0},
+		Type  = 1,
+		Payment  = 8865,
+	},
+	--Paleto Boulevard (At the paleto garage) 7.42KM
+	Delivery5 = {
+		Pos      = {x = 176.60, y = 6624.51, z = 30.95},
+		Size  = {x = 3.0, y = 3.0, z = 1.0},
+		Color = {r = 204, g = 204, b = 0},
+		Type  = 1,
+		Payment  = 11000,
+	},
+	--Senora Freeway (close to YOUTOOL) 3.14KM
+	Delivery6 = {
+		Pos      = {x = 2654.40, y = 3264.30, z = 54.47},
+		Size  = {x = 3.0, y = 3.0, z = 1.0},
+		Color = {r = 204, g = 204, b = 0},
+		Type  = 1,
+		Payment  = 4700,
+	},
 	
-	RetourCamion = {
-			Pos   = {x = 162.5408, y = -3188.7770, z = 4.5},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 0
-		},
+	--###Between Blaine County and Los Santos###
+	--Banham Canyon (Somewhere above Kortz Center) 3.72KM
+	Delivery7 = {
+		Pos      = {x = -1819.87, y = 806.18, z = 137.92},
+		Size  = {x = 3.0, y = 3.0, z = 1.0},
+		Color = {r = 204, g = 204, b = 0},
+		Type  = 1,
+		Payment  = 6200,
+	},
+	--Palomino Freeway (Right side of the map, that bigger center with multiple shops in the middle of the highway) 5.44KM
+	Delivery8 = {
+		Pos      = {x = 2549.72, y = 343.02, z = 107.70},
+		Size  = {x = 3.0, y = 3.0, z = 1.0},
+		Color = {r = 204, g = 204, b = 0},
+		Type  = 1,
+		Payment  = 9000,
+	},
 	
-	AnnulerMission = {
-			Pos   = {x = 162.0788, y = -3210.7067, z = 4.5},
-			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Type  = 1,
-			Paye = 0
-		},
+	--###Los Santos###
+	--Entering (Close to Vinewood Bowl) 3.64KM
+	Delivery9 = {
+		Pos      = {x = 630.39, y = 249.15, z = 102.34},
+		Size  = {x = 3.0, y = 3.0, z = 1.0},
+		Color = {r = 204, g = 204, b = 0},
+		Type  = 1,
+		Payment  = 6500,
+	},
+	--Mirror Park 4.24KM
+	Delivery10 = {
+		Pos      = {x = 1172.43, y = -315.52, z = 68.41},
+		Size  = {x = 3.0, y = 3.0, z = 1.0},
+		Color = {r = 204, g = 204, b = 0},
+		Type  = 1,
+		Payment  = 7500,
+	},
+	--Close to LSPD 4.94KM
+	Delivery11 = {
+		Pos      = {x = 826.12, y = -1044.24, z = 26.38},
+		Size  = {x = 3.0, y = 3.0, z = 1.0},
+		Color = {r = 204, g = 204, b = 0},
+		Type  = 1,
+		Payment  = 9000,
+	},
+	--Del Perro Freeway (Close to the beach, leaving city) 5.76KM
+	Delivery12 = {
+		Pos      = {x = -2080.37, y = -306.59, z = 12.30},
+		Size  = {x = 3.0, y = 3.0, z = 1.0},
+		Color = {r = 204, g = 204, b = 0},
+		Type  = 1,
+		Payment  = 10000,
+	},
+	--Ginger Street (Close to store and Ammunation) 5.40KM
+	Delivery13 = {
+		Pos      = {x = -727.42, y = -912.37, z = 18.25},
+		Size  = {x = 3.0, y = 3.0, z = 1.0},
+		Color = {r = 204, g = 204, b = 0},
+		Type  = 1,
+		Payment  = 10500,
+	},
+	--Calais Ave & Innocence Blvd (Close to heli pad and dock) 5.78KM
+	Delivery14 = {
+		Pos      = {x = -517.79, y = -1214.73, z = 17.47},
+		Size  = {x = 3.0, y = 3.0, z = 1.0},
+		Color = {r = 204, g = 204, b = 0},
+		Type  = 1,
+		Payment  = 11350,
+	},
+	--Strawberry Ave (Close to Vanilla Unicorn and Legion Square) 5.31KM
+	Delivery15 = {
+		Pos      = {x = 294.55, y = -1247.08, z = 28.52},
+		Size  = {x = 3.0, y = 3.0, z = 1.0},
+		Color = {r = 204, g = 204, b = 0},
+		Type  = 1,
+		Payment  = 10500,
+	},
+	--Groove Street 5.71KM
+	Delivery16 = {
+		Pos      = {x = -63.73, y = -1774.58, z = 28.14},
+		Size  = {x = 3.0, y = 3.0, z = 1.0},
+		Color = {r = 204, g = 204, b = 0},
+		Type  = 1,
+		Payment  = 11500,
+	},
 }
