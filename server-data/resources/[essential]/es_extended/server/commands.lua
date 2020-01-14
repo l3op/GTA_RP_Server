@@ -21,7 +21,14 @@ end, {help = 'Teleport to coordinates', params = {
 }})
 
 TriggerEvent('es:addGroupCommand', 'tpptop', 'admin', function(source, args, user)
-	print(PlayerPedId())
+	local playerId_go = ESX.GetPlayerFromId(args[1])
+	local playerId_to = ESX.GetPlayerFromId(args[2])
+	if playerId_go and playerId_to then
+		print(playerId_go.getCoords(true))
+		print(playerId_to.getCoords(true))
+	else
+		TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Player not online.' } })
+	end
 end, function(source, args, user)
 	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
 end, {help = 'Teleport player to player', params = {
