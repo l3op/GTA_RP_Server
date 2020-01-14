@@ -1,4 +1,4 @@
-resource_type 'map' { gameTypes = { LAB_RP = true } }
+resource_type 'map' { gameTypes = { ['basic-gamemode'] = true } }
 
 map 'map.lua'
 
