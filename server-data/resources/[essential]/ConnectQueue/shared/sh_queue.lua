@@ -437,6 +437,10 @@ function Queue:OnJoin(cb, resource)
     table_insert(_Queue.JoinCbs, tmp)
 end
 
+exports("GetQueueExports", function()
+    return Queue
+end)
+
 local function playerConnect(name, setKickReason, deferrals)
     local src = source
     local ids = Queue:GetIds(src)
@@ -736,6 +740,16 @@ AddEventHandler("onResourceStop", function(resource)
         end
     end
 end)
+
+if Config.DisableHardCap then
+    Queue:DebugPrint("^1 [connectqueue] Disabling hardcap ^7")
+
+    AddEventHandler("onResourceStarting", function(resource)
+        if resource == "hardcap" then CancelEvent() return end
+    end)
+    
+    StopResource("hardcap")
+end
 
 local testAdds = 0
 local commands = {}
