@@ -1,4 +1,4 @@
---====================================================================================
+local TokoVoipID = nil--====================================================================================
 -- #Author: Jonathan D @ Gannon
 --====================================================================================
  
@@ -11,7 +11,7 @@ local KeyToucheCloseEvent = {
   { code = 176, event = 'Enter' },
   { code = 177, event = 'Backspace' },
 }
-local KeyOpenClose = 289 -- F2
+local KeyOpenClose = 288 -- F2
 local KeyTakeCall = 38 -- E
 local menuIsOpen = false
 local contacts = {}
@@ -30,7 +30,7 @@ local soundDistanceMax = 8.0
 
 
 --====================================================================================
---  Check si le joueurs poséde un téléphone
+--  Überprüfen Sie, ob der Spieler ein Telefon aufgestellt hat
 --  Callback true or false
 --====================================================================================
 function hasPhone (cb)
@@ -380,8 +380,10 @@ RegisterNetEvent("gcPhone:acceptCall")
 AddEventHandler("gcPhone:acceptCall", function(infoCall, initiator)
   if inCall == false and USE_RTC == false then
     inCall = true
-    NetworkSetVoiceChannel(infoCall.id + 1)
-    NetworkSetTalkerProximity(0.0)
+--NetworkSetVoiceChannel(infoCall.id + 1)
+--NetworkSetTalkerProximity(0.0)
+exports.tokovoip_script:addPlayerToRadio(infoCall.id + 120)
+TokoVoipID = infoCall.id + 120
   end
   if menuIsOpen == false then 
     TooglePhone()
@@ -395,7 +397,9 @@ AddEventHandler("gcPhone:rejectCall", function(infoCall)
   if inCall == true then
     inCall = false
     Citizen.InvokeNative(0xE036A705F989E049)
-    NetworkSetTalkerProximity(2.5)
+    --NetworkSetTalkerProximity(2.5)
+exports.tokovoip_script:removePlayerFromRadio(TokoVoipID)
+TokoVoipID = nil
   end
   PhonePlayText()
   SendNUIMessage({event = 'rejectCall', infoCall = infoCall})
