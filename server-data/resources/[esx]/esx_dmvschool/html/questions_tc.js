@@ -9,16 +9,16 @@ var tableauQuestion = [
 	},
 
 	{
-		question: "If you're turning right at a traffic light, but see a pedestrian crossing what do you do:",
-		propositionA: "You pass the pedestrian",
-		propositionB: "You check that there is no other vehicles around",
-		propositionC: "You wait until the pedestrian has crossed",
-		propositionD: "You shoot the pedestrian and continue to drive",
+		question: "如果您在紅綠燈處右轉，但看到行人經過您該怎麼辦:",
+		propositionA: "加速輾過",
+		propositionB: "您檢查附近是否沒有其他車輛",
+		propositionC: "你等到行人過馬路",
+		propositionD: "您射死行人並繼續開車",
 		reponse: "C"
 	},
 
 	{
-		question: "Without any prior indication, the speed in a residential area is: __ km/h",
+		question: "沒有任何事先指示，市區的速度為: __ km/h",
 		propositionA: "30 km/h",
 		propositionB: "50 km/h",
 		propositionC: "40 km/h",
@@ -27,16 +27,16 @@ var tableauQuestion = [
 	},
 
 	{
-		question: "Before every lane change you must:",
-		propositionA: "Check your mirrors",
-		propositionB: "Check your blind spots",
-		propositionC: "Signal your intentions",
-		propositionD: "All of the above",
+		question: "在每次換車道之前，您必須:",
+		propositionA: "看後照鏡",
+		propositionB: "緩緩變換車道",
+		propositionC: "打方向燈",
+		propositionD: "以上皆是",
 		reponse: "D"
 	},
 
 	{
-		question: "What blood alcohol level is classified as driving while intoxicated?",
+		question: "醉酒時血液酒精的水平被分類為駕駛?",
 		propositionA: "0.05%",
 		propositionB: "0.18%",
 		propositionC: "0.08%",
@@ -45,34 +45,34 @@ var tableauQuestion = [
 	},
 
 	{
-		question: "When can you continue to drive at a traffic light?",
-		propositionA: "When it is green",
-		propositionB: "When there is nobody in the intersection",
-		propositionC: "You are in a school zone",
-		propositionD: "When it is green and / or red and you're turning right",
+		question: "您什麼時候可以繼續在紅綠燈處開車?",
+		propositionA: "當綠色",
+		propositionB: "當路口沒人時",
+		propositionC: "在學校路口",
+		propositionD: "當它是綠色和/或紅色並且您向右轉時",
 		reponse: "D"
 	},
 
 	{
-		question: "A pedestrian has a do not cross signal, what do you do?",
-		propositionA: "You let them pass",
-		propositionB: "You observe before continuing",
-		propositionC: "You wave to tell them to cross",
-		propositionD: "You continue because your traffic light is green",
+		question: "有行人經過，但是他不遵守交通規則，該怎麼做?",
+		propositionA: "讓他過",
+		propositionB: "您繼續觀察之前",
+		propositionC: "你揮手告訴他們穿越",
+		propositionD: "您繼續操作，因為您的交通信號燈是綠色的",
 		reponse: "D"
 	},
 
 	{
-		question: "What is allowed when passing another vehicle",
-		propositionA: "You follow it closely to pass it faster",
-		propositionB: "You pass it without leaving the roadway",
-		propositionC: "You drive on the opposite side of the road to pass",
-		propositionD: "You exceed the speed limit to pass them",
+		question: "通過另一輛車時允許的條件",
+		propositionA: "您密切關注以更快地通過它",
+		propositionB: "您通過它而不會離開道路",
+		propositionC: "您在馬路對面開車經過",
+		propositionD: "您超過了速度限制才能通過",
 		reponse: "C"
 	},
 
 	{
-		question: "You are driving on a highway which indicates a maximum speed of 120 km/h. But most trafficers drive at 125 km/h, so you should not drive faster than:",
+		question: "您正在高速公路上行駛，指示最高時速為120 km / h。 但是大多數交通人員以每小時125公里的速度行駛，因此您的行駛速度不應超過:",
 		propositionA: "120 km/h",
 		propositionB: "125 km/h",
 		propositionC: "130 km/h",
@@ -81,11 +81,11 @@ var tableauQuestion = [
 	},
 
 	{
-		question: "When you are overtaken by another vehicle it is important NOT to:",
-		propositionA: "Slow Down",
-		propositionB: "Check your mirrors",
-		propositionC: "Watch other drivers",
-		propositionD: "Increase your speed",
+		question: "當您被其他車輛超越時，請務必不要:",
+		propositionA: "減速",
+		propositionB: "檢查你的後照鏡",
+		propositionC: "看其他司機",
+		propositionD: "提高速度",
 		reponse: "D"
 	},
 ]
