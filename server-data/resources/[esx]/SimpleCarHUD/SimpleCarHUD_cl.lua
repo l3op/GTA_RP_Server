@@ -80,7 +80,7 @@ Citizen.CreateThread(function()
             drawTxt(timeText, 4, locationColorText, 0.4, screenPosX, screenPosY + 0.048)
             
             -- Display heading, street name and zone when possible
-            drawTxt(locationText, 4, locationColorText, 0.5, screenPosX, screenPosY + 0.075)
+            drawTxt(locationText, 1, locationColorText, 0.5, screenPosX, screenPosY + 0.075)
         
             -- Display remainder of HUD when engine is on and vehicle is not a bicycle
             local vehicleClass = GetVehicleClass(vehicle)

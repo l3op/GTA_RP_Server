@@ -7,7 +7,7 @@ Locales['tc'] = {
   ['press_custom'] = '按下 ~INPUT_PICKUP~ 來 ~y~個人化~s~ 你的車輛。',
   ['level'] = '等級 %s',
   ['neon'] = '氖',
-  ['blip_name'] = '高譚市改車廠',
+  ['blip_name'] = '實驗市改車廠',
 -- Paint Colors
   -- Black
   ['black'] = '黑色',

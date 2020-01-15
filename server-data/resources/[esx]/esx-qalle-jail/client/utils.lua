@@ -197,6 +197,6 @@ Citizen.CreateThread(function()
     SetBlipAsShortRange(blip, true)
 
     BeginTextCommandSetBlipName("STRING")
-    AddTextComponentString('Boilingbroke Penitentiary')
+    AddTextComponentString('綠島監獄')
     EndTextCommandSetBlipName(blip)
 end)

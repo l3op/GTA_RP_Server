@@ -56,5 +56,5 @@ Config.JobBlip = {
 	display = 4,
 	scale = 1.2,
 	colour = 63,
-	name = 'State Casino'
+	name = '賭場'
 }
