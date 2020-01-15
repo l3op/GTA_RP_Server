@@ -7,15 +7,16 @@ server_scripts {
 
 -- Uncomment the desired version 
 --ui_page('client/html/UI-fr.html') -- French UI
-ui_page('client/html/UI-en.html') -- English UI
+ui_page('client/html/UI-tc.html') -- chinese UI
+--ui_page('client/html/UI-en.html') -- English UI
 --ui_page('client/html/UI-tc.html') -- English UI
 --ui_page('client/html/UI-de.html') -- German UI
 
 files {
-	--'client/html/UI-fr.html', -- French UI
+	'client/html/UI-fr.html', -- French UI
 	'client/html/UI-en.html', -- English UI
-    --'client/html/UI-de.html', -- German UI
-    --'client/html/UI-tc.html', -- traditional chinese UI
+    'client/html/UI-de.html', -- German UI
+    'client/html/UI-tc.html', -- traditional chinese UI
     'client/html/style.css',
     'client/html/media/font/Bariol_Regular.otf',
     'client/html/media/font/Vision-Black.otf',
