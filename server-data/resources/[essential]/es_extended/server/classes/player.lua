@@ -369,7 +369,7 @@ function CreateExtendedPlayer(player, accounts, inventory, job, loadout, name, l
 		count = 0;
 		for k,v in ipairs(self.inventory) do
 			if v.name == name then
-				count = count + 1
+				count = count + v.count
 			end
 		end
 		print("購買前持有數")
