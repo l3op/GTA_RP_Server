@@ -229,9 +229,10 @@ end)
 TriggerEvent('es:addGroupCommand', 'revive', 'admin', function(source, args, user)
 	if args[1] then
 		local playerId = tonumber(args[1])
+		local xPlayer = ESX.GetPlayerFromId(player)
 		print(playerId)
-		print(ESX.Players[playerId])
-		if playerId then
+		print(xPlayer)
+		if playerId and ESX.Players[playerId] then
 			TriggerClientEvent('esx_ambulancejob:revive', playerId)
 		else
 			TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Player not online.' } })
