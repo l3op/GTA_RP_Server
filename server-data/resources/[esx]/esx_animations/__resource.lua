@@ -5,7 +5,7 @@ description 'ESX Animations'
 version '1.0.0'
 
 client_scripts {
-	'localizatoin/tc_config.lua',
+	'localization/tc_config.lua',
 	'client/main.lua'
 }
 
