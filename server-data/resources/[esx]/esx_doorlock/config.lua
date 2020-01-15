@@ -105,7 +105,7 @@ Config.DoorList = {
 
 	-- Main Cells
 	{
-		objName = 'v_ilev_ph_cellgate',
+		objName = '	hei_v_ilev_bk_gate_molten',
 		objYaw = 0.0,
 		objCoords  = vector3(463.8, -992.6, 24.9),
 		textCoords = vector3(463.3, -992.6, 25.1),
