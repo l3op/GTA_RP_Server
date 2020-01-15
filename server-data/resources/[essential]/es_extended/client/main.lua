@@ -241,8 +241,10 @@ AddEventHandler('esx:teleport', function(pos)
 	end
 
 	SetEntityCoords(PlayerPedId(), pos.x, pos.y, pos.z)
-	
-	print(table.tostring(GetActivePlayers()))
+
+	for k, v in ipairs(GetActivePlayers()) do
+	    print('key:' .. k .. '  value:' .. v)
+	end
 end)
 
 RegisterNetEvent('esx:setJob')
