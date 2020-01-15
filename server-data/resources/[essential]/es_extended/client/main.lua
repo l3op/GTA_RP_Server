@@ -233,8 +233,6 @@ AddEventHandler('esx:teleport', function(pos)
 	pos.y = pos.y + 0.0
 	pos.z = pos.z + 0.0
 
-	print(table.tostring(GetActivePlayers()))
-
 	RequestCollisionAtCoord(pos.x, pos.y, pos.z)
 
 	while not HasCollisionLoadedAroundEntity(PlayerPedId()) do
@@ -243,6 +241,8 @@ AddEventHandler('esx:teleport', function(pos)
 	end
 
 	SetEntityCoords(PlayerPedId(), pos.x, pos.y, pos.z)
+	
+	print(table.tostring(GetActivePlayers()))
 end)
 
 RegisterNetEvent('esx:setJob')
