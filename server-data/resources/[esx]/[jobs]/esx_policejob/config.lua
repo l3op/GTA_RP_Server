@@ -49,6 +49,15 @@ Config.PoliceStations = {
 					{ coords = vector3(453.5, -1022.2, 28.0), heading = 90.0, radius = 6.0 },
 					{ coords = vector3(450.9, -1016.5, 28.1), heading = 90.0, radius = 6.0 }
 				}
+			},
+
+			{
+				Spawner = vector3(473.3, -1018.8, 28.0),
+				InsideShop = vector3(228.5, -993.5, -99.0),
+				SpawnPoints = {
+					{ coords = vector3(475.9, -1021.6, 28.0), heading = 276.1, radius = 6.0 },
+					{ coords = vector3(484.1, -1023.1, 27.5), heading = 302.5, radius = 6.0 }
+				}
 			}
 		},
 
