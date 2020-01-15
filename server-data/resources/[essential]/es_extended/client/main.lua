@@ -233,7 +233,7 @@ AddEventHandler('esx:teleport', function(pos)
 	pos.y = pos.y + 0.0
 	pos.z = pos.z + 0.0
 
-	print(GetActivePlayers())
+	print(table.tostring(GetActivePlayers())
 
 	RequestCollisionAtCoord(pos.x, pos.y, pos.z)
 
