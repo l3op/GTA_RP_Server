@@ -365,11 +365,23 @@ function CreateExtendedPlayer(player, accounts, inventory, job, loadout, name, l
 		return inventoryWeight
 	end
 
+	self.getCount = function(name)
+		count = 0;
+		for k,v in ipairs(self.inventory) do
+			if v.name == name then
+				count = count + 1
+			end
+		end
+		return count
+	end
+
 	self.canCarryItem = function(name, count)
+		--bread and water can't buy more than 5
+		
 		local currentWeight, itemWeight = self.getWeight(), ESX.Items[name].weight
 		local newWeight = currentWeight + (itemWeight * count)
 
-		return newWeight <= self.maxWeight
+		return newWeight <= self.maxWeight and self.getCount()+count < ESX.Items[name].limit
 	end
 
 	self.canSwapItem = function(firstItem, firstItemCount, testItem, testItemCount)
