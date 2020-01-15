@@ -12,7 +12,7 @@ end)
 ]]
 
 Config = {}
-Config.Locale = 'en'
+Config.Locale = 'tc'
 
 Config.KickPossibleCheaters = true -- If true it will kick the player that tries store a vehicle that they changed the Hash or Plate.
 Config.UseCustomKickMessage = true -- If KickPossibleCheaters is true you can set a Custom Kick Message in the locales.

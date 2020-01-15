@@ -13,7 +13,7 @@ Config.Zones = {
 		Type  = 1,
 		Colour    = 5, --BLIP
 		Id        = 477, --BLIP
-		Title     = "Fuel Transporter", --BLIP
+		Title     = "燃油運輸", --BLIP
 	},
 	
 	--Here you can cancel the job

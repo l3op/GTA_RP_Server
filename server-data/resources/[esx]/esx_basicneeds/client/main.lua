@@ -38,7 +38,7 @@ AddEventHandler('playerSpawned', function(spawn)
 end)
 
 AddEventHandler('esx_status:loaded', function(status)
-
+	--每秒扣飢餓度100、口渴75
 	TriggerEvent('esx_status:registerStatus', 'hunger', 1000000, '#CFAD0F', function(status)
 		return true
 	end, function(status)

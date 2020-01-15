@@ -75,7 +75,7 @@ function JailLogin()
 	local JailPosition = Config.JailPositions["Cell"]
 	SetEntityCoords(PlayerPedId(), JailPosition["x"], JailPosition["y"], JailPosition["z"] - 1)
 
-	ESX.ShowNotification("Last time you went to sleep you were jailed, because of that you are now put back!")
+	ESX.ShowNotification("上次您入睡時被判入獄，因為您現在被放回原處!")
 
 	InJail()
 end
@@ -89,7 +89,7 @@ function UnJail()
 		TriggerEvent('skinchanger:loadSkin', skin)
 	end)
 
-	ESX.ShowNotification("You are released, stay calm outside! Good LucK!")
+	ESX.ShowNotification("您被釋放了，在外面保持冷靜！ 祝好運！")
 end
 
 function InJail()
@@ -154,7 +154,7 @@ function InJail()
 							if v["state"] then
 								PackPackage(posId)
 							else
-								ESX.ShowNotification("You've already taken this package!")
+								ESX.ShowNotification("您已經拿了這個包裹!")
 							end
 
 						end
@@ -191,7 +191,7 @@ function LoadTeleporters()
 
 					sleepThread = 5
 
-					ESX.Game.Utils.DrawText3D(v, "[E] Open Door", 0.4)
+					ESX.Game.Utils.DrawText3D(v, "[E] 開門", 0.4)
 
 					if DistanceCheck <= 1.0 then
 						if IsControlJustPressed(0, 38) then
@@ -244,7 +244,7 @@ function PackPackage(packageId)
 
 			Package["state"] = false
 		else
-			ESX.Game.Utils.DrawText3D(Package, "Packaging... " .. math.ceil(tonumber(PackPercent)) .. "%", 0.4)
+			ESX.Game.Utils.DrawText3D(Package, "包裝中... " .. math.ceil(tonumber(PackPercent)) .. "%", 0.4)
 		end
 		
 	end
@@ -279,7 +279,7 @@ function DeliverPackage(packageId)
 			local PedPosition = GetEntityCoords(PlayerPedId())
 			local DistanceCheck = GetDistanceBetweenCoords(PedPosition, DeliverPosition["x"], DeliverPosition["y"], DeliverPosition["z"], true)
 
-			ESX.Game.Utils.DrawText3D(DeliverPosition, "[E] Leave Package", 0.4)
+			ESX.Game.Utils.DrawText3D(DeliverPosition, "[E] 離開包裝", 0.4)
 
 			if DistanceCheck <= 2.0 then
 				if IsControlJustPressed(0, 38) then
@@ -318,40 +318,40 @@ function OpenJailMenu()
 			ESX.UI.Menu.Open(
           		'dialog', GetCurrentResourceName(), 'jail_choose_time_menu',
           		{
-            		title = "Jail Time (minutes)"
+            		title = "入獄時間 (分鐘)"
           		},
           	function(data2, menu2)
 
             	local jailTime = tonumber(data2.value)
 
             	if jailTime == nil then
-              		ESX.ShowNotification("The time needs to be in minutes!")
+              		ESX.ShowNotification("時間需要以分鐘為單位!")
             	else
               		menu2.close()
 
               		local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
 
               		if closestPlayer == -1 or closestDistance > 3.0 then
-                		ESX.ShowNotification("No players nearby!")
+                		ESX.ShowNotification("附近沒有任何玩家!")
 					else
 						ESX.UI.Menu.Open(
 							'dialog', GetCurrentResourceName(), 'jail_choose_reason_menu',
 							{
-							  title = "Jail Reason"
+							  title = "入獄原因"
 							},
 						function(data3, menu3)
 		  
 						  	local reason = data3.value
 		  
 						  	if reason == nil then
-								ESX.ShowNotification("You need to put something here!")
+								ESX.ShowNotification("你需要在這裡放些東西!")
 						  	else
 								menu3.close()
 		  
 								local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
 		  
 								if closestPlayer == -1 or closestDistance > 3.0 then
-								  	ESX.ShowNotification("No players nearby!")
+								  	ESX.ShowNotification("附近沒有任何玩家!")
 								else
 								  	TriggerServerEvent("esx-qalle-jail:jailPlayer", GetPlayerServerId(closestPlayer), jailTime, reason)
 								end
@@ -375,7 +375,7 @@ function OpenJailMenu()
 			ESX.TriggerServerCallback("esx-qalle-jail:retrieveJailedPlayers", function(playerArray)
 
 				if #playerArray == 0 then
-					ESX.ShowNotification("Your jail is empty!")
+					ESX.ShowNotification("你的監獄是空的!")
 					return
 				end
 

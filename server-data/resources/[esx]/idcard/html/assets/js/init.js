@@ -19,10 +19,10 @@ $(document).ready(function(){
           $('#sex').text('female');
         }
 
-        $('#name').text(userData.firstname + ' ' + userData.lastname);
-        $('#dob').text(userData.dateofbirth);
+        $('#name').text(userData.name);
+        $('#dob').text(userData.job);
         $('#height').text(userData.height);
-        $('#signature').text(userData.firstname + ' ' + userData.lastname);
+        $('#signature').text(userData.name);
 
         if ( type == 'driver' ) {
           if ( licenseData != null ) {
@@ -50,9 +50,9 @@ $(document).ready(function(){
       } else if ( type == 'weapon' ) {
         $('img').hide();
         $('#name').css('color', '#d9d9d9');
-        $('#name').text(userData.firstname + ' ' + userData.lastname);
-        $('#dob').text(userData.dateofbirth);
-        $('#signature').text(userData.firstname + ' ' + userData.lastname);
+        $('#name').text(userData.name);
+        $('#dob').text(userData.job);
+        $('#signature').text(userData.name);
 
         $('#id-card').css('background', 'url(assets/images/firearm.png)');
       }

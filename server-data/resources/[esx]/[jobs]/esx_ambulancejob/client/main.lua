@@ -41,8 +41,11 @@ AddEventHandler('playerSpawned', function()
 					Citizen.Wait(1000)
 				end
 
+				--set hunger and thirst to 10% when u death on log out
+				TriggerClientEvent('esx_status:add', source, 'thirst', 10000)
 				ESX.ShowNotification(_U('combatlog_message'))
 				RemoveItemsAfterRPDeath()
+
 			end
 		end)
 	else
