@@ -229,6 +229,8 @@ end)
 TriggerEvent('es:addGroupCommand', 'revive', 'admin', function(source, args, user)
 	if args[1] then
 		local playerId = tonumber(args[1])
+		print(playerId)
+		print(ESX.Players[playerId])
 		if playerId and ESX.Players[playerId] then
 			TriggerClientEvent('esx_ambulancejob:revive', playerId)
 		else
