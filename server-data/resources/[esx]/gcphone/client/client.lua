@@ -382,8 +382,8 @@ AddEventHandler("gcPhone:acceptCall", function(infoCall, initiator)
     inCall = true
 --NetworkSetVoiceChannel(infoCall.id + 1)
 --NetworkSetTalkerProximity(0.0)
-exports.tokovoip_script:addPlayerToRadio(infoCall.id + 120)
-TokoVoipID = infoCall.id + 120
+    exports.tokovoip_script:addPlayerToRadio(infoCall.id + 120)
+    TokoVoipID = infoCall.id + 120
   end
   if menuIsOpen == false then 
     TooglePhone()
@@ -398,8 +398,8 @@ AddEventHandler("gcPhone:rejectCall", function(infoCall)
     inCall = false
     Citizen.InvokeNative(0xE036A705F989E049)
     --NetworkSetTalkerProximity(2.5)
-exports.tokovoip_script:removePlayerFromRadio(TokoVoipID)
-TokoVoipID = nil
+    exports.tokovoip_script:removePlayerFromRadio(TokoVoipID)
+    TokoVoipID = nil
   end
   PhonePlayText()
   SendNUIMessage({event = 'rejectCall', infoCall = infoCall})
@@ -467,9 +467,11 @@ end)
 RegisterNUICallback('notififyUseRTC', function (use, cb)
   USE_RTC = use
   if USE_RTC == true and inCall == true then
-    inCall = false
+    inCall = false  
     Citizen.InvokeNative(0xE036A705F989E049)
-    NetworkSetTalkerProximity(2.5)
+    exports.tokovoip_script:removePlayerFromRadio(TokoVoipID)
+    TokoVoipID = nil
+    --NetworkSetTalkerProximity(2.5)
   end
   cb()
 end)
