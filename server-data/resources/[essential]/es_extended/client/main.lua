@@ -8,7 +8,7 @@ AddEventHandler('esx:playerLoaded', function(xPlayer)
 	ESX.PlayerData = xPlayer
 
 	if Config.EnableHud then
-		for k,v in ipairs(xPlayer.accounts) do
+		--[[for k,v in ipairs(xPlayer.accounts) do
 			--just show the bank
 			if k==2 then
 				break
@@ -23,7 +23,7 @@ AddEventHandler('esx:playerLoaded', function(xPlayer)
 			ESX.UI.HUD.UpdateElement('account_' .. v.name, {
 				money = ESX.Math.GroupDigits(v.money)
 			})
-		end
+		end]]--
 
 		local jobTpl = '<div>{{job_label}} - {{grade_label}}</div>'
 
