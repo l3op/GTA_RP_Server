@@ -34,34 +34,34 @@ local options = {
 
 function DemarchesMenu()
     ped = GetPlayerPed(-1);
-	options.menu_subtitle = "Categories"
+	options.menu_subtitle = "種類"
     ClearMenu()	
-	Menu.addButton("~b~Humeurs", "demHumeurs", nil)
-	Menu.addButton("~b~Attitudes", "demAttitudes", nil)
-    Menu.addButton("~b~Autres", "demAutres", nil)
-	Menu.addButton("~b~Spécial Femmes", "demFemmes", nil)
-    Menu.addButton("~c~---------------------------", "quitter", nil)
-    Menu.addButton("~o~Quitter", "quitter", nil)
+	Menu.addButton("~b~Humeurs", "心情", nil)
+	Menu.addButton("~b~Attitudes", "態度", nil)
+    Menu.addButton("~b~Autres", "其他", nil)
+	Menu.addButton("~b~Spécial Femmes", "女人", nil)
+    Menu.addButton("~c~---------------------------", "離開", nil)
+    Menu.addButton("~o~Quitter", "離開", nil)
 end
 
 
 
 
 function demHumeurs()
-    options.menu_subtitle = "Humeurs"
+    options.menu_subtitle = "態度"
     ClearMenu()
-							Menu.addButton("Determiné", 	"humeurs1",nil)
-							Menu.addButton("Triste",      	"humeurs2",nil)
-							Menu.addButton("Depression", 	"humeurs4",nil)
-							Menu.addButton("Enervé",  		"humeurs5",nil)
-							Menu.addButton("Pressé",		"humeurs6",nil)
-							Menu.addButton("Timide", 		"humeurs9",nil)
-							Menu.addButton("Lunatique",  	"humeurs10",nil)
-							Menu.addButton("Stressé",  		"humeurs11",nil)
-							Menu.addButton("Flemme",    	"humeurs12",nil)
+							Menu.addButton("Determiné", 	"心情1",nil)
+							Menu.addButton("Triste",      	"心情2",nil)
+							Menu.addButton("Depression", 	"心情3",nil)
+							Menu.addButton("Enervé",  		"心情4",nil)
+							Menu.addButton("Pressé",		"心情5",nil)
+							Menu.addButton("Timide", 		"心情6",nil)
+							Menu.addButton("Lunatique",  	"心情7",nil)
+							Menu.addButton("Stressé",  		"心情8",nil)
+							Menu.addButton("Flemme",    	"心情9",nil)
 
-							Menu.addButton("~c~---------------------------", "DemarchesMenu", nil)
-							Menu.addButton("~r~Reset", "reset", nil)
+							Menu.addButton("~c~---------------------------", "離開選單", nil)
+							Menu.addButton("~r~Reset", "重置", nil)
 end
 
 
@@ -202,21 +202,21 @@ end
 function demAttitudes()
     options.menu_subtitle = "Attitudes"
     ClearMenu()
-					Menu.addButton("Hautain",    						"attitude1",nil)
-					Menu.addButton("Bad Boy",             				"attitude2",nil)
-					Menu.addButton("Gangster",							"attitude3",nil)
-					Menu.addButton("Fraquassé",							"attitude4",nil)
-					Menu.addButton("Coquille vide",    					"attitude5",nil)
-					Menu.addButton("Coincé",             				"attitude6",nil)
-					Menu.addButton("Perdu",             				"attitude9",nil)
-					Menu.addButton("Intimidant",						"attitude10",nil)
-					Menu.addButton("Richissime",    					"attitude11",nil)
-					Menu.addButton("Hargneux",							"attitude12",nil)
-					Menu.addButton("Imposant",							"attitude13",nil)
+					Menu.addButton("Hautain",    						"態度1",nil)
+					Menu.addButton("Bad Boy",             				"態度2",nil)
+					Menu.addButton("Gangster",							"態度3",nil)
+					Menu.addButton("Fraquassé",							"態度4",nil)
+					Menu.addButton("Coquille vide",    					"態度5",nil)
+					Menu.addButton("Coincé",             				"態度6",nil)
+					Menu.addButton("Perdu",             				"態度7",nil)
+					Menu.addButton("Intimidant",						"態度8",nil)
+					Menu.addButton("Richissime",    					"態度9",nil)
+					Menu.addButton("Hargneux",							"態度10",nil)
+					Menu.addButton("Imposant",							"態度11",nil)
 					Menu.addButton("Frimeur",			"attitude14",nil)
 
-					Menu.addButton("~c~---------------------------", "DemarchesMenu", nil)
-					Menu.addButton("~r~Reset",								"reset", nil)
+					Menu.addButton("~c~---------------------------", "離開選單", nil)
+					Menu.addButton("~r~Reset",								"重置", nil)
 
 end
 
@@ -395,10 +395,10 @@ end
 function demAutres()
     options.menu_subtitle = "Autres"
     ClearMenu()
-					Menu.addButton("Randonneur",		"autres1",nil)
-					Menu.addButton("Blessé",    		"autres2",nil)
-					Menu.addButton("Obèse",				"autres3",nil)
-					Menu.addButton("Mal aux fesses", 	"autres4",nil)
+					Menu.addButton("Randonneur",		"其他1",nil)
+					Menu.addButton("Blessé",    		"其他2",nil)
+					Menu.addButton("Obèse",				"其他3",nil)
+					Menu.addButton("Mal aux fesses", 	"其他4",nil)
 					Menu.addButton("Detente",		"autres6",nil)
 
 
@@ -478,21 +478,21 @@ end
 							end
 							
 							function demFemmes()
-    options.menu_subtitle = "Special Femmes"
+    options.menu_subtitle = "女人"
     ClearMenu()
-					Menu.addButton('Arrogante',    						"femmes1",nil)
-					Menu.addButton('Classique',							"femmes3",nil)
-					Menu.addButton('Fragile',             			"femmes5",nil)
-					Menu.addButton('Enervée',							"femmes6",nil)
-					Menu.addButton('Femme fatale',             				"femmes8",nil)
-					Menu.addButton('Fuite',    							"femmes10",nil)
-					Menu.addButton('Tristesse',             			"femmes11",nil)
-					Menu.addButton('Rebelle',							"femmes12",nil)
-					Menu.addButton('Serieuse',    							"femmes13",nil)
-					Menu.addButton('Roule des fesses',             				"femmes14",nil)
-					Menu.addButton('Hautaine',							"femmes15",nil)
-					Menu.addButton("~c~---------------------------", "DemarchesMenu", nil)
-					Menu.addButton('~r~Reset',							"reset", nil)
+					Menu.addButton('Arrogante',    						"女人1",nil)
+					Menu.addButton('Classique',							"女人2",nil)
+					Menu.addButton('Fragile',             			"女人3",nil)
+					Menu.addButton('Enervée',							"女人4",nil)
+					Menu.addButton('Femme fatale',             				"女人5",nil)
+					Menu.addButton('Fuite',    							"女人6",nil)
+					Menu.addButton('Tristesse',             			"女人7",nil)
+					Menu.addButton('Rebelle',							"女人8",nil)
+					Menu.addButton('Serieuse',    							"女人9",nil)
+					Menu.addButton('Roule des fesses',             				"女人10",nil)
+					Menu.addButton('Hautaine',							"女人11",nil)
+					Menu.addButton("~c~---------------------------", "離開選單", nil)
+					Menu.addButton('~r~Reset',							"重置", nil)
 
 end
 
