@@ -376,8 +376,6 @@ function CreateExtendedPlayer(player, accounts, inventory, job, loadout, name, l
 	end
 
 	self.canCarryItem = function(name, count)
-		--bread and water can't buy more than 5
-		
 		local currentWeight, itemWeight = self.getWeight(), ESX.Items[name].weight
 		local newWeight = currentWeight + (itemWeight * count)
 
