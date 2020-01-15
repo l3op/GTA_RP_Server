@@ -372,6 +372,8 @@ function CreateExtendedPlayer(player, accounts, inventory, job, loadout, name, l
 				count = count + 1
 			end
 		end
+		print("購買前持有數")
+		print(count)
 		return count
 	end
 
@@ -379,7 +381,7 @@ function CreateExtendedPlayer(player, accounts, inventory, job, loadout, name, l
 		local currentWeight, itemWeight = self.getWeight(), ESX.Items[name].weight
 		local newWeight = currentWeight + (itemWeight * count)
 
-		return newWeight <= self.maxWeight and self.getCount()+count < ESX.Items[name].limit
+		return newWeight <= self.maxWeight and (self.getCount()+count)< ESX.Items[name].limit
 	end
 
 	self.canSwapItem = function(firstItem, firstItemCount, testItem, testItemCount)
