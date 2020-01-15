@@ -17,7 +17,7 @@ Config.Weapons = {
 			{name = 'luxary_finish', label = _U('component_luxary_finish'), hash = GetHashKey('COMPONENT_PISTOL_VARMOD_LUXE')}
 		}
 	},
-
+	
 	{
 		name = 'WEAPON_COMBATPISTOL',
 		label = _U('weapon_combatpistol'),
@@ -54,7 +54,7 @@ Config.Weapons = {
 		}
 	},
 
-	{name = 'WEAPON_REVOLVER', label = _U('weapon_revolver'), components = {}},
+	--[[{name = 'WEAPON_REVOLVER', label = _U('weapon_revolver'), components = {}},
 
 	{
 		name = 'WEAPON_SNSPISTOL',
@@ -403,5 +403,5 @@ Config.Weapons = {
 	{name = 'GADGET_NIGHTVISION', label = _U('gadget_nightvision'), components = {}},
 	{name = 'GADGET_PARACHUTE', label = _U('gadget_parachute'), components = {}},
 	{name = 'WEAPON_FLARE', label = _U('weapon_flare'), components = {}},
-	{name = 'WEAPON_DOUBLEACTION', label = _U('weapon_doubleaction'), components = {}}
+	{name = 'WEAPON_DOUBLEACTION', label = _U('weapon_doubleaction'), components = {}}]]--
 }
