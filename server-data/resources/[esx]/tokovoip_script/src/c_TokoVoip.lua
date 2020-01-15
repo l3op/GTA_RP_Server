@@ -66,7 +66,7 @@ function TokoVoip.updateTokoVoipInfo(self, forceUpdate) -- Update the top-left i
 		info = info .. " on radio ";
 	end
 	if (self.talking == 1 or self.plugin_data.radioTalking) then
-		info = "<font class='talking'>" .. info .. "</font>";
+		info = "<font class='talking'>" .. info .. "[通話中]</font>";
 	end
 	if (self.plugin_data.radioChannel ~= -1 and self.myChannels[self.plugin_data.radioChannel]) then
 		if (string.match(self.myChannels[self.plugin_data.radioChannel].name, "Call")) then
