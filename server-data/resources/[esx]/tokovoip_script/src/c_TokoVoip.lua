@@ -55,18 +55,18 @@ end
 function TokoVoip.updateTokoVoipInfo(self, forceUpdate) -- Update the top-left info
 	local info = "";
 	if (self.mode == 1) then
-		info = "普通";
+		info = "Normal";
 	elseif (self.mode == 2) then
-		info = "小聲";
+		info = "Whispering";
 	elseif (self.mode == 3) then
-		info = "大聲";
+		info = "Shouting";
 	end
 
 	if (self.plugin_data.radioTalking) then
-		info = info .. " 使用通話裝置 ";
+		info = info .. " on radio ";
 	end
 	if (self.talking == 1 or self.plugin_data.radioTalking) then
-		info = "<font class='talking'>" .. info .."通話中" "</font>";
+		info = "<font class='talking'>" .. info .. "</font>";
 	end
 	if (self.plugin_data.radioChannel ~= -1 and self.myChannels[self.plugin_data.radioChannel]) then
 		if (string.match(self.myChannels[self.plugin_data.radioChannel].name, "Call")) then
