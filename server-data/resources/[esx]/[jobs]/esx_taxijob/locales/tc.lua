@@ -44,6 +44,6 @@ Locales['tc'] = {
   ['have_withdrawn'] = '你已經領了 ~y~x%s~s~ ~b~%s~s~',
   ['have_deposited'] = '你已經存了 ~y~x%s~s~ ~b~%s~s~',
   ['player_cannot_hold'] = '你的背包 ~r~沒有~s~ 足夠的 ~y~空間~s~ !',
-  ['blip_taxi'] = 'downtown Cab Co.',
-  ['phone_taxi'] = 'downtown Cab Co.',
+  ['blip_taxi'] = '計程車中心',
+  ['phone_taxi'] = '計程車中心',
 }

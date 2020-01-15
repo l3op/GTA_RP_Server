@@ -70,8 +70,8 @@ Locales['tc'] = {
   -- Phone
   ['alert_ambulance'] = '警示救護車',
   -- Death
-  ['respawn_available_in'] = '可在 ~b~%s 單位(2個月) %s 天~s~內重生',
-  ['respawn_bleedout_in'] = '你將會在 ~b~%s 單位(2個月) %s 天~s~內失血\n',
+  ['respawn_available_in'] = '可在 ~b~%s 分鐘 %s 秒~s~內重生',
+  ['respawn_bleedout_in'] = '你將會在 ~b~%s 分鐘 %s 秒~s~內失血\n',
   ['respawn_bleedout_prompt'] = '按住 [~b~E~s~] 來重生',
   ['respawn_bleedout_fine'] = '按住 [~b~E~s~] 來重生，花費 ~g~$%s~s~',
   ['respawn_bleedout_fine_msg'] = '你花費了 ~r~$%s~s~ 來重生.',
